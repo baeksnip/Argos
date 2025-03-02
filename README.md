@@ -9,4 +9,4 @@ Installation:
 
 -Automatize bash script
 
--Copy the php and text file to your web server folder, create subfolders: _fecha, _mac, _macNombres, _nombre and _puertos
+-Copy the php and text file to your web server folder and create subfolders: _fecha, _mac, _macNombres, _nombre and _puertos
