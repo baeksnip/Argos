@@ -7,6 +7,9 @@ Installation:
 
 -Configure parameters in bash script
 
+>rango="192.168.100"
+>ruta_web="/var/www/html/argos/"
+
 -Schedule a recurring task, this uses crontab and repeats every 15 minutes
 >sudo crontab -e
 
