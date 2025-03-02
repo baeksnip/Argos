@@ -6,7 +6,6 @@ trap ctrl_c INT
 # Config parametros #
 rango="192.168.100"
 ruta_web="/var/www/html/argos/"
-fecha=`date +"%d/%m/%Y %H:%M"`
 # Config parametros #
 
 #Variables
@@ -16,6 +15,7 @@ ruta_ficheros_macNombres=$ruta_web"_macNombres/"
 ruta_macVendors=$ruta_web"macVendors.txt"
 ruta_ficheros_fecha=$ruta_web"_fecha/"
 ruta_ficheros_nombre=$ruta_web"_nombre/"
+fecha=`date +"%d/%m/%Y %H:%M"`
 
 #Escaneo de IPs
 for ip in $(seq 1 254); do
