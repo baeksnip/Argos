@@ -3,6 +3,7 @@ function ctrl_c(){
  exit 1
 }
 trap ctrl_c INT
+
 # Config parametros #
 rango="192.168.100"
 ruta_web="/var/www/html/argos/"
