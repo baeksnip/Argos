@@ -49,7 +49,7 @@ for fichero_ip in `ls $ruta_ficheros_puertos`; do
 	if [ "$size" -le 2 ]; then
 		rm $ruta_ficheros_puertos$fichero_ip
 		touch $ruta_ficheros_puertos$fichero_ip
-                for port in $(seq 1 10000); do
+                for port in $(seq 1 65535); do
                         timeout 0.1 bash -c "echo '' > /dev/tcp/$fichero_ip/$port" 2>/dev/null && echo -n $port"," >> $ruta_ficheros_puertos$fichero_ip
                 done; wait
         fi
