@@ -7,6 +7,9 @@ Installation:
 
 -Configure parameters in bash script
 
--Automatize bash script
+-Schedule a recurring task, this uses crontab and repeats every 15 minutes
+sudo crontab -e
+*/15 * * * * /COMPLETE_PATH_TO_SHELL_SCRIPT/argos.sh
 
--Copy the php and text file to your web server folder and create subfolders: _fecha, _mac, _macNombres, _nombre and _puertos
+-In the web folder, create folder for store php script and create folders: _fecha, _mac, _macNombres, _nombre and _puertos
+mkdir _fecha _mac _macNombres _nombre _puertos
