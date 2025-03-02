@@ -3,17 +3,19 @@ function ctrl_c(){
  exit 1
 }
 trap ctrl_c INT
-
 # Config parametros #
 rango="192.168.100"
-ruta_ficheros_puertos="/var/www/html/argos/_puertos/"
-ruta_ficheros_mac="/var/www/html/argos/_mac/"
-ruta_ficheros_macNombres="/var/www/html/argos/_macNombres/"
-ruta_macVendors="/var/www/html/argos/macVendors.txt"
-ruta_ficheros_fecha="/var/www/html/argos/_fecha/"
-ruta_ficheros_nombre="/var/www/html/argos/_nombre/"
+ruta_web="/var/www/html/argos/"
 fecha=`date +"%d/%m/%Y %H:%M"`
 # Config parametros #
+
+#Variables
+ruta_ficheros_puertos=$ruta_web"_puertos/"
+ruta_ficheros_mac=$ruta_web"_mac/"
+ruta_ficheros_macNombres=$ruta_web"_macNombres/"
+ruta_macVendors=$ruta_web"macVendors.txt"
+ruta_ficheros_fecha=$ruta_web"_fecha/"
+ruta_ficheros_nombre=$ruta_web"_nombre/"
 
 #Escaneo de IPs
 for ip in $(seq 1 254); do
