@@ -1,5 +1,4 @@
-# Argos
->Local Network Inventory Scanner
+# Argos (Local Network Inventory Scanner)
 
 The purpose is to have the bash script running periodically to identify the devices within a network, as well as their open ports, representing the information in a web table.
 
